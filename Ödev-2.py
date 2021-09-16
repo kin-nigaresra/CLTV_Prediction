@@ -26,16 +26,16 @@ def replace_with_thresholds(dataframe, variable):
     dataframe.loc[(dataframe[variable] < low_limit), variable] = low_limit
     dataframe.loc[(dataframe[variable] > up_limit), variable] = up_limit
 
-#########################
+
 # Verinin Veri Tabanından Okunması
-#########################
+
 
 # credentials.
-creds = {'user': 'group_02',
-         'passwd': 'hayatguzelkodlarucuyor',
-         'host': '34.88.156.118',
-         'port': 3306,
-         'db': 'group_02'}
+creds = {'user': '****',
+         'passwd': '*****',
+         'host': '*****',
+         'port': *****,
+         'db': '*****'}
 
 # MySQL conection string.
 connstr = 'mysql+mysqlconnector://{user}:{passwd}@{host}:{port}/{db}'
